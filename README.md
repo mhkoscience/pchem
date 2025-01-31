@@ -4,7 +4,7 @@ Předmět Počítačová chemie (B403011) je vyučován na Vysoké škole chemic
 
 Součástí závěrečného hodnocení je zpracování Domácího projektu. Projekty jsou organizovány do čtyř skupin:
 
-q - kvantová chemie v programu Gaussian
-s - simulace molekulové dynamiky ve 2D a 3D
-p - programovací úlohy okrajově souvicející s chemie
-b - výpočetní biochemie
+q - kvantová chemie v programu Gaussian<br>
+s - simulace molekulové dynamiky ve 2D a 3D<br>
+p - programovací úlohy okrajově souvicející s chemie<br>
+b - výpočetní biochemie<br>
