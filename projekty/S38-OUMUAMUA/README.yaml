@@ -1,0 +1,15 @@
+title: Je Oumuamua mimozemský kosmický koráb?
+difficulty: 3M
+keywords:
+    -
+story:
+    - Oumuamua je vesmírný objekt pozorovaný v roce 2017.
+    - Jeho jméno je havajského původu neboť objekt byl zaznamenán dalekohlem na Havajských ostrovech.
+    - Spekuluje se, že je dílem inteligentní civilizace.
+instruction:
+    - Simulujte rotaci podlouhlého tuhého tělesa (kousek diamantu) ve vakuu.
+    - Stanovte závislost plochy pozorované z jednoho směru na čase.
+    - Vyzkoušejte různé počáteční podmínky. 
+    - Dostanete křivky podobné naměřeným křivkám jasu Oumuamuy na čase?
+literature:
+    - <a href="../cz/pomucky/kolafa/oumuamua.txt">Návod</a>

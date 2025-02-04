@@ -1,0 +1,13 @@
+title: Kvazikrystaly
+difficulty: ?S
+keywords:
+    - SIMOLANT
+story:
+    - Kvazikrystaly jsou pevné látky, které vykazují uspořádanest na malých škálách, ale na velkých škálách jsou neuspořádané.
+instruction:
+    - Diskutujte pojmy kvazikrystal a Penroseovo dláždění (Penrose tiling).
+    - Pokuste se získat tuto strukturu v simulaci potenciálu se dvěma minimy implementovanou v SIMOLANTu
+    - Pozn. autor této úlohy neví, zda to jde.
+literature:
+    - <a href="https://old.vscht.cz/fch/software/simolant/index-cz.html">SIMOLANT</a>
+    - <a href="../cz/pomucky/kolafa/MSD.txt">Několik tipů</a>

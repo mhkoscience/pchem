@@ -1,0 +1,14 @@
+title: Kulová hvězdokupa
+difficulty: 5M
+keywords:
+    -
+story:
+    - Kulová hvězdokupa s dostatečným množstvím hvězd je metastabilní útvar pomalu se vypařující do prostoru. 
+instruction:
+    - Simulujte hvězdokupu složenou z cca 200-400 hvězd o hmotnosti rovné hmotnosti Slunce v oblasti o velikosti řádově jednotky parseků.
+    - Verzi MD programu s opačným znaménkem interakce nábojů dostanete na požádání, můžete si ho také sami napsat.
+    - Dokážete získat útvar dostatečně stabilní alespoň stovek milionů let?
+    - Přidejte výklad o aplikaci věty o viriálu na rovnováhu klastru. 
+literature:
+    - V. Vanýsek, Základy astronomie a astrofyziky, Academia, Praha (1980).
+    - <a href="../cz/pomucky/kolafa/stars.txt">Návod</a>

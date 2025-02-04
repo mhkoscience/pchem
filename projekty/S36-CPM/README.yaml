@@ -1,0 +1,12 @@
+title: Rozdíl tepelných kapacit
+difficulty: 5M
+keywords:
+    -
+story:
+    -
+instruction:
+    - Simulujte vodu (např. model SPC/E) za běžných podmínek za konstantního tlaku a objemu.
+    - Stanovte rozdíl tepelných kapacit Cpm-CVm jednak přímo (ze simulace při aspoň dvou teplotách v příslušném souboru), jednak ze stavové rovnice (vyberte vhodnou verzi a opět stanovte derivace numericky z několika simulací). 
+    - Porovnejte s reálným experimentem. Která metoda je přesnější?
+    - Konzultace doporučená.
+literature:

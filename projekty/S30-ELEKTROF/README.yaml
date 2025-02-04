@@ -1,0 +1,12 @@
+title: Elektroforéza
+difficulty: 4M
+keywords:
+    -
+story:
+    -
+instruction:
+    - Simulujte atom Xe ve vodním roztoku LiI, ve kterém teče elektrický proud.
+    - Může být atom Xe unášen? 
+literature:
+    - <a href="../cz/pomucky/kolafa/elektroforeza.txt">Návod</a>
+    - <a href="../cz/pomucky/kolafa/elektroforeza.zip">data</a>

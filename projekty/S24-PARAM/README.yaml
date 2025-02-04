@@ -1,0 +1,14 @@
+title: Konstrukce silového pole
+difficulty: 5M
+keywords:
+    -
+story:
+    - Simulace molekulové dynamiky silně závisí na volbě silového pole.
+    - Cílem je obvykle získat co nejpřesnější a zároveň nejlépe přenositelné molekulárně mechanické parametry.
+    - Bohužel, tyto dva cíle jdou proti sobě.
+instruction:
+    - Nastavte parametry modelu iontů Na+ a Cl- tak, aby popisovaly dobře jak krystal NaCl tak taveninu.
+    - Velikost iontů (sigma nebo R_vdW) nastavte podle nalezené experimentální hustoty, hloubku potenciálové jámy (nebo Emin) podle výparné entalpie.
+    - Poměr velikostí obou iontů ovlivňuje stabilitu krystalu (bod tání).
+    - Konzultace doporučená.
+literature:

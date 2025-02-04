@@ -1,0 +1,12 @@
+title: Voda a solanka v mikrovlnce
+difficulty: 5M
+keywords:
+    -
+story:
+    -
+instruction:
+    - Simulujte vodu (SPC/E) a solanku (model JC) v elektrickém poli o frekvenci 2.45 GHz a stanovte rychlost zahřívání. 
+    - Můžete provést i reálný experiment.
+    - Konzultace je doporučená.
+literature:
+    - <a href="http://old.vscht.cz/fch/cz/pomucky/kolafa/wateran.pdf#page=48">reálný experiment</a>

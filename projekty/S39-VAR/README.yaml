@@ -1,0 +1,11 @@
+title: Var modelu vody
+difficulty: 3M
+keywords:
+    - molekulová dynamika
+story:
+    -
+instruction:
+    - Simulujte metodou MD ve slab geometrii vodu TIP4P/2005 s párou za teploty 200 °C.
+    - Stanovte rovnovážné hustoty a tlak.
+literature:
+    - <a href="../cz/pomucky/kolafa/varvoda.txt">Návod</a>

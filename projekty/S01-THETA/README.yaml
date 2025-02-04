@@ -1,0 +1,12 @@
+title: 2D kontaktní úhel
+difficulty: 2S
+keywords:
+    - SIMOLANT
+story:
+    -
+instruction:
+    - Stanovte pro 2D kapalinu implementovanou v SIMOLANTu kontaktní úhel na přitažlivé stěně v závislosti na (rovnoměrné) hustotě materiálu stěny (rho).
+    - Stanovte hustotu, kdy dojde k rozestírání, a porovnejte s rovnovážnou hustotou kapaliny.
+literature:
+    - <a href="https://old.vscht.cz/fch/software/simolant/index-cz.html">SIMOLANT</a>
+    - <a href="../cz/pomucky/kolafa/simolanttheta.txt">Návod</a>

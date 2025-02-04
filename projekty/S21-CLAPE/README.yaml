@@ -1,0 +1,13 @@
+title: Clapeyronova rovnice
+difficulty: 4M
+keywords:
+    - fázové rovnováhy
+    - molekulová dynamika
+story:
+    -
+instruction:
+    - Vypočtěte entalpii tání modelu NaCl a bod tání pro alespoň dva různé tlaky.
+    - Výsledky porovnejte s predikcí pomocí Clapeyronovy rovnice.
+literature:
+    - <a href="../cz/pomucky/kolafa/clapeyron.txt">Návod</a>
+    - <a href="../cz/pomucky/kolafa/clapeyron.zip">data</a>

@@ -1,0 +1,14 @@
+title: Struktura povrchového filmu
+difficulty: 4M
+keywords:
+    - molekulová dynamika
+    - povrchy
+story:
+    -
+instruction:
+    - Simulujte povrchově aktivní látku (oktanol) na povrchu vody ve slab geometrii.
+    - Vhodné silové pole (TraPPE-UA pro alkohol a SPC pro vodu) dostanete na požádání. 
+    - Měňte pokrytí resp. velikost plochy a všímejte si struktury povrchového filmu (2D plyn, kapalina, krystal). 
+    - Srovnejte s experimentem.
+    - Konzultace doporučená.
+literature:

@@ -1,0 +1,60 @@
+﻿Studujte změnu teploty po koalescenci dvou kapek a srovnejte s teoretickým výpočtem z povrchového napětí a tepelné kapacity.
+
+Základní metodologie simulací viz http://old.vscht.cz/fch/cz/pomucky/kolafa/pchem03.pdf
+
+Analogií povrchového napětí ve 2D je lineární napětí (line tension), rozměr je J/m = N. SIMOLANT ovšem používá bezrozměrné jednotky.
+
+Ve 3D pro "slab-geometrii" (1 vrstva kapaliny se dvěma povrchy kolmá k ose z) platí pro povrchové napětí:
+    γ = (2 Pzz − Pxx − Pyy)*Lz/4
+kde Lz je velikost simulační buňky ve směru osy z a Pzz,Pyy,Pzz jsou diagonální složky tenzoru tlaku.
+
+Ve 2D obdobně pro lineární napětí a vrstvu kolmou k ose y:
+    γ = (Pyy – Pxx)*Ly/2
+
+Povrchové napětí/lineární napětí γ je formou Gibbsovy energie. Za konstantního tlaku lze tedy napsat:
+   η = γ + T σ
+kde η je povrchová entalpie a σ = -∂γ/∂T je povrchová entropie (vzpomeňte si na dG = −S dT + V dp a G = H − TS).
+
+Pro změnu teploty po koalescenci dvou kapek platí
+  ΔT = −η Δl / Cp
+kde Δl je změna délky obvodu kapek (ve 3D to bude změna plochy povrchu kapek) a Cp izobarická tepelná kapacita.
+
+1) Pro stanovení ΔT splynutí kapek připravte:
+- N=300 vyhovuje
+- panel vpravo dole: "measurement block" na maximum
+- panel vpravo dole: "simulation speed" nechte na 3
+- menu: [Show and measure] → Temperature
+- panel Expert → include: [Convergence prof.]
+- pro lepší orientaci doporučuji color mode: [Neighbors]
+
+2) Koalescence kapek
+- menu: [Prepare system] → Two drops
+- po krátkém ustálení přepněte na NVE:
+  menu: → Method → Molecular Dynamics NVE (microcanonical)
+- stiskněte [record] a počkejte, až kapky splynou – dejte pozor na periodické okrajové podmínky
+- vypněte [record] a uložte
+- opakujte krok 2 několikrát
+Vykreslete soubory simolant-CP?.csv a odhadněte zvýšení teploty.
+
+Stanovení povrchového napětí a derivace podle teploty (−σ)
+
+3)
+- panel dole: "simulation speed" na maximum
+- panel dole: "measurement block" na maximum
+- panel Expert → include: [Density profile]
+
+4) Zvolte si teplotu, např. T1=0.5
+- menu: [Prepare system] → [Horizontal slab]
+- Stiskněte [record] a měřte poměrně dlouho (numerická derivace je nepřesná)
+- ignorujte hlášku "Cannot follow periodic boundary conditions"
+- Zapište pomocí [record]
+- opakujte pro vyšší teplotu, např. T1=0.6
+- vypočtěte σ = −∂γ/∂T ≈ −[γ(T2)−γ(T1)]/(T2−T1) včetně odhadu chyby
+- vypočtěte η = γ + T σ, kde T=(T1+T2)/2, γ=[γ(T2)+γ(T1)]/2
+
+5) Protože simulace vrstvy jsou přibližně za P=0, je entalpie na částici rovna prakticky Etot. Z výše uvedených dvou simulací tedy dostanete
+   Cp = [Etot(T2)−Etot(T1)]/(T2−T1)
+
+6) Nakreslete soubory simolant-VDP?.csv a odhadněte průměrnou číselnou hustotu uprostřed vrstvy ≈ hustota kapaliny.
+
+7) Ze známého počtu částic, číselné hustotu a vzorce pro plochu kruhu vypočtěte poloměry obou menších kapek a poloměr výsledné kapky a z toho rozdíl obvodů, Δl (ten je záporný). Vypočtěte  −η Δl / Cp a srovnejte s ΔT.

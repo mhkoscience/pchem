@@ -1,0 +1,14 @@
+title: Simulovaná ničička
+difficulty: 3M
+keywords:
+    -
+story:
+    -
+instruction:
+    - Připravte krystalek ledu v modelu TIP4P/2005 za nízké teploty.
+    - Odhadněte rychlost, při které je kinetická energie rovna energii potřebné k roztavení ledíků.
+    - Dva ledíky nechte danou rychlostí srazit. Vyzkoušejte nižší i vyšší rychlosti. 
+    - Při jaké rychlosti začnou odletovat fragmenty resp. jednotlivé molekuly? 
+    - Jako bonus se můžete zmínit o vaší oblíbené filmové ničičce.
+literature:
+    - <a href="../cz/pomucky/kolafa/nicicka.txt">Návod</a>

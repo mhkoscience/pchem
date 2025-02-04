@@ -1,0 +1,12 @@
+title: Rovnovážný tvar krystalu
+difficulty: 2M
+keywords:
+    - molekulová dynamika
+story:
+    - Simulované žíhání (annealing) je simulační metoda umožňující najít globální minimum zobecněné energie.
+instruction:
+    - Stanovte metodou simulovaného žíkání (velmi pomalé chlazení) rovnovážný tvar krystalku Na32Cl32 za volných (vakuových) okrajových podmínek.
+    - Vznikne pravidelný krystal 4×4×4? 
+    - Přidejte pojednání o závislosti rovnovážného tvaru krystalu na mezifázovém napětí (Wulffova konstrukce).
+literature:
+    - <a href="../cz/pomucky/kolafa/wulff.txt">Návod</a>

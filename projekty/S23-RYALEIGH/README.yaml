@@ -1,0 +1,14 @@
+title: Rayleighova nestabilita
+difficulty: 2M
+keywords:
+    -
+story:
+    - Padající čúrek vody se rozpadá na kapky.
+    - Nejprve si najděte v literatuře teorii tohoto jevu.
+instruction:
+    - Simulujte tento jev pomocí dlouhého válce kapalného argonu (případně vody - další informace na požádání).
+    - Vzniknou kapky o teoreticky předpovězené velikosti?
+    - Otázka pro česky mluvíci. Je správně čůrek nebo čúrek? 
+    - Otázka pro česky nemluvící. Jak se řekne čúrek ve vašem rodném jazyce?
+literature:
+    - <a href="../cz/pomucky/kolafa/rayleigh.txt">Návod</a>

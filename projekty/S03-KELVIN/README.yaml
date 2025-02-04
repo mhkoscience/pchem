@@ -1,0 +1,13 @@
+title: Kelvinova rovnice ve 2D
+difficulty: 3S
+keywords:
+    - SIMOLANT
+story:
+    -
+instruction:
+    - Stanovte pro 2D kapalinu implementovanou v SIMOLANTu povrchové napětí a tlak nasycených par jak nad rovinným rozhraním, tak nad kapkou i v kavitě (bublině).
+    - Ověřte platnost 2D verze Kelvinovy rovnice.
+    - Zobrazte a okomenujte radiální hustotní profil kapky/kavity.
+literature:
+    - <a href="https://old.vscht.cz/fch/software/simolant/index-cz.html">SIMOLANT</a>
+    - <a href="http://old.vscht.cz/fch/en/tools/kolafa/simenw3.pdf">Návod</a>

@@ -1,0 +1,12 @@
+title: Elektrospinning
+difficulty: 3M
+keywords:
+    -
+story:
+    -
+instruction:
+    - Simulujte vrstvu SPC/E vody v silném elektrickém poli.
+    - Pozorujte vznik Taylorova kužele a vlákna 
+literature:
+    - <a href="../cz/pomucky/kolafa/electrospinning.txt">Návod</a>
+    - DOI:10.1021/ie404268f

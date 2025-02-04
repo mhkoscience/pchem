@@ -1,0 +1,12 @@
+title: Kapka v elektrickém poli
+difficulty: 3M
+keywords:
+    -
+story:
+    -
+instruction:
+    - Simulujte kapku SPC/E vody v silném elektrickém poli. 
+    - Jak se změní tvar kapky? 
+literature:
+    - DOI:10.1021/ie404268f
+    - <a href="../cz/pomucky/kolafa/kapkavpoli.txt">Návod</a>

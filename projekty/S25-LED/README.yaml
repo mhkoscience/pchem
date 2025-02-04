@@ -1,0 +1,13 @@
+title: Bod tání ledů
+difficulty: 4M
+keywords:
+    - molekulová dynamika
+story:
+    -
+instruction:
+    - Stanovte bod tání hexagonálního (Ih) nebo kubického (Ic) ledu přímou metodou.
+    - Použijte model vody TIP4P/2005 (případně OPC nebo Nada–Eerden - více informací na požádání). 
+    - K dispozici budete mít i krystal ledu s náhodnou orientací protonů.
+    - Přidejte stručné pojednání o polymorfismu ledu.
+literature:
+    - <a href="../cz/pomucky/kolafa/ice.txt">Návod.</a>

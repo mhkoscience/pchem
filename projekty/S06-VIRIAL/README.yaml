@@ -1,0 +1,13 @@
+title: Druhý viriálový koeficient.
+difficulty: 2S
+keywords:
+    - termodynamika
+    - SIMOLANT
+story:
+    -
+instruction:
+    - Pro 2D systém implementovaný v SIMOLANTu stanovte druhý viriálový koeficient pro několik teplot _pseudoexperimentálně_ z tlaku (resp. ze kompresibilitního faktoru Z).
+    - Srovnejte s přímým výpočtem. (Návod)
+literature:
+    - <a href="https://old.vscht.cz/fch/software/simolant/index-cz.html">SIMOLANT</a>
+    - <a href="../cz/pomucky/kolafa/simolantB2.txt">Návod</a>

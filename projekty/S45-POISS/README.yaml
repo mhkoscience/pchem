@@ -1,0 +1,13 @@
+title: Poissonova konstanta zlata a pevnost zlata v tahu
+difficulty: 5M
+keywords:
+    -
+story:
+    -
+instruction:
+    - Na fcc krystal modelu zlata v periodických okrajových podmínkách aplikujte různý tlak/tah v různých směrech
+    - Spočtěte Poissonovu konstantu a srovnejte s experimentem.
+    - Postupně zvyšujte tah a stanovte mez pevnosti. 
+    - Konzultace je doporučená.
+literature:
+    - <a href="https://en.wikipedia.org/wiki/Poisson%27s_ratio">Poissonovu konstantu</a>
