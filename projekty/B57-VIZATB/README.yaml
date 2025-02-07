@@ -1,0 +1,20 @@
+title: Vizualizace antibiotik inhibujících translaci
+difficulty: 4
+keywords:
+    - PDB
+    - VMD
+    - Mol*
+    - Chimera
+    - Pymol
+    - ribozom
+    - antibiotika
+story:
+    - Ribozom je velký biomolekulový komplex zodpovědný za syntézu proteinů, tzv. translaci.
+    - Ribozom bakterií se v detailech liší od lidských ribozomů, čehož se využívá při léčbě bakteriálních infekcí.
+instructions:
+    - Vyhledejte antibiotika (ATB) cílící na ribozom.
+    - V PDB vyhledejte strukturní modely komplexů ribozom-ATB.
+    - Vytvořte vizualizace komplexů v kontextu celého ribozomu.
+    - Diskutujte, jak se liší mechanismy účinku jednotlivých třít ATB.
+literature:
+    - http://www.nature.com.ej.mpibpc.mpg.de/nrmicro/journal/v12/n1/full/nrmicro3155.html
