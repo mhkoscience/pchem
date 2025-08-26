@@ -1,13 +1,12 @@
 title: Clapeyronova rovnice
-difficulty: 4M
+difficulty: 4
 keywords:
-    - fázové rovnováhy
     - molekulová dynamika
+    - fázové rovnováhy
+    - MACSIMUS
 story:
-    -
+    - Clapeyronova rovnice je termodynamická rovnice, která popisuje rovnováhu mezi dvěma fázemi látky (například kapalina-plyn, pevná látka-kapalina).
+    - Molekulárně dynamické simulace umožňují sledovat systém na různých teplot a tlaků.
 instruction:
     - Vypočtěte entalpii tání modelu NaCl a bod tání pro alespoň dva různé tlaky.
     - Výsledky porovnejte s predikcí pomocí Clapeyronovy rovnice.
-literature:
-    - <a href="../cz/pomucky/kolafa/clapeyron.txt">Návod</a>
-    - <a href="../cz/pomucky/kolafa/clapeyron.zip">data</a>

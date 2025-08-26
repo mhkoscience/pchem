@@ -1,9 +1,13 @@
 title: Klastry zlata
-difficulty: 3M
+difficulty: 3
 keywords:
-    -
+    - molekulová dynamika
+    - zlato
+    - fázové rovnováhy
+    - MACSIMUS
 story:
-    -
+    - Simulace molekulové dynamiky umožňují řídit teplotu systému.
+    - Toho lze využít pro studium teplotně závislých jevů.
 instruction:
     - Vytvořte krystalky zlata ve tvaru dvacetistěnu.
     - Simulujte s potenciálem typu tight-binding.
@@ -11,7 +15,4 @@ instruction:
     - Opakujte podobný pseudoexperiment s argonem; rozdíly vysvětlete.
     - Zkuste krystalek roztavit a pomalu zchladit - zkrystalizuje opět?
 literature:
-    - <a href="https://pubs.aip.org/aip/jcp/article/122/21/214722/896065/Melting-of-icosahedral-gold-nanoclusters-from">J. Chem. Phys. 122, 214722 (2005)</a>
-    - <a href="../cz/pomucky/kolafa/gold.txt">Návod</a>
-    - <a href="../cz/pomucky/kolafa/gold.zip">data</a>
-    - J. Chem. Phys. 122, 214722 (2005).  (Návod / data)
+    - https://pubs.aip.org/aip/jcp/article/122/21/214722/896065/Melting-of-icosahedral-gold-nanoclusters-from

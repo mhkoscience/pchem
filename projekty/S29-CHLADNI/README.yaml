@@ -1,9 +1,11 @@
 title: Chladniho obrazce
-difficulty: 2M
+difficulty: 2/
 keywords:
-    -
+    - molekulová dynamika
+    - MACSIMUS
+    - experiment
 story:
-    -
+    - Chladniho obrazce jsou obrazce vznikající na povrchu kmitající desky (např. kovové nebo skleněné), když se na ni nasype jemný prášek.
 instruction:
     - Studujte vibrace plátků grafenu.
     - Vizualizujte je tak, aby byly vidět uzlové křivky.
@@ -12,5 +14,3 @@ instruction:
     - Můžete si také půjčit zařízení vyrobené generacemi studentů v místnosti A402. 
     - Vysvětlete souvislosti. 
     - Na závěr přidejte několik zajímavostí o grafenu.
-literature:
-    - <a href="../cz/pomucky/kolafa/chladni.txt">Návod</a>

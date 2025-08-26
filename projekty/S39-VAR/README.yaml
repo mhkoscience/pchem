@@ -1,11 +1,13 @@
 title: Var modelu vody
-difficulty: 3M
+difficulty: 3
 keywords:
     - molekulová dynamika
+    - voda
+    - fázové rovnováhy
+    - MACSIMUS
 story:
-    -
+    - Var je děj, při kterém se tlak nasycených par kapaliny vyrovná okolnímu tlaku a dochází k vypařování kapaliny z celého jejího objemu.
+    - Při tlaku 1 atm má voda bod varu 100 °C.
 instruction:
-    - Simulujte metodou MD ve slab geometrii vodu TIP4P/2005 s párou za teploty 200 °C.
-    - Stanovte rovnovážné hustoty a tlak.
-literature:
-    - <a href="../cz/pomucky/kolafa/varvoda.txt">Návod</a>
+    - Simulujte metodou MD ve slab geometrii kapalnou vodu s vodní párou za teploty 200 °C. Použijte model TIP4P/2005.
+    - Stanovte rovnovážné hustoty kapaliny a páry rovnovážný tlak.

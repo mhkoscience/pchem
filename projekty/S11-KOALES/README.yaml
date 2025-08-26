@@ -1,11 +1,9 @@
 title: Koalescence kapek
-difficulty: 4S
+difficulty: 3
 keywords:
     - SIMOLANT
     - koloidní chemie
 story:
-    -
+    - Koalescence kapek je proces jejich samovolného spojování do větších kapek, poháněný snahou systému minimalizovat povrchovou energii.
 instruction:
     - Studujte změnu teploty po koalescenci dvou kapek a srovnejte s teoretickým výpočtem z povrchového napětí a tepelné kapacity.
-literature:
-    - <a href="../cz/pomucky/kolafa/twodrops2D.txt">Návod</a>

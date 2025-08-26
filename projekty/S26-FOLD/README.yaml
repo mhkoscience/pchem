@@ -15,4 +15,4 @@ instructions:
     - Vytvořte dvě počáteční konformace, a to alfa-helix a plně natažený peptid.
     - Proveďte molekulově dynamickou simulace tohoto peptidu při teplotě 310 K a tlaku 1 bar. Budou potřeba časové škály ve stovkách nanosekund.
     - Vhodnými metrikami popište časový vývoj sekundární strutury.
-    - Výsledky diskutujte.
+    - Výsledky a pozorování diskutujte.

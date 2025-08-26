@@ -1,12 +1,13 @@
 title: Stabilita nabitých klastrů vody s ionty
-difficulty: 5M
+difficulty: 5
 keywords:
-    -
+    - molekulová dynamika
+    - GROMACS
 story:
-    -
+    - Coulombova nestabilita je jev, ke kterému dochází v systémech, kde se významně projevuje odpudivá elektrostatická síla mezi elektricky nabitými částicemi.
+    - Jde o situaci, kdy se elektrický náboj koncentruje v určitém objemu nebo na povrchu objektu do té míry, že elektrostatické odpuzování překoná přitažlivé síly (např. gravitaci nebo povrchové napětí). Výsledkem je rozpad, exploze nebo deformace systému.
 instruction:
     - Připravte klastr cca 100 molekul vody ve vakuu a ochlaďte jej.
-    - Vyměňte pravidelně blízko povrchu několik molekul za ion (např. Na+), nejprve silně chlaďte a pak pomalu ohřívejte.
-    - Při jakém náboji se klastr rozletí (Coulombova nestabilita)? 
-    - Konzultace je doporučená.
-literature:
+    - Na povrchu klastru vyměňte v pravidelných intervalech molekuly vody za ionty (např. Na+), nejprve silně chlaďte a pak pomalu ohřívejte.
+    - Při jakém náboji se klastr rozpadne? 
+    - Diskutujte svá pozorování.

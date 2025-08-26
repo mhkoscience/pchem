@@ -1,13 +1,14 @@
 title: Koalescence kapek
-difficulty: 3M
+difficulty: 3
 keywords:
     - molekulová dynamika
     - voda
+    - povrchové napětí
+    - MACSIMUS
 story:
     - Pokud splynou dvě makroskopické kapky vody, teplota se prakticky nezmění. 
     - U velmi malých kapek to však neplatí. 
 instruction:
     - Vypočtěte změnu teploty po splynutí dvou kapek vody o 250 molekulách. 
-    - Simulujte ten samý jev s modelem SPC/E.
-literature:
-    - <a href="../cz/pomucky/kolafa/dvekapky.txt">Návod</a>
+    - Simulujte tento jev s modelem SPC/E.
+    - Svá pozorování diskutujte.

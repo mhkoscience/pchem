@@ -8,7 +8,7 @@ Základní metodologie simulací viz http://old.vscht.cz/fch/cz/pomucky/kolafa/p
 - Menu [Prepare system] → Hexagonal crystal
 - Teplotu na minimum
 - Pomocí slideru "g" opatrně uložte krystal na spodní okraj boxu tak, aby se  nerozbil ani nezměnil tvar. Můžete se pomoci např. Langevinovým termostatem.
-- Uložte si tuto konfoguraci pomocí menu [File] → Save configuration as...
+- Uložte si tuto konfiguraci pomocí menu [File] → Save configuration as...
 
 2) Nahrajte [File] → Load configuration as... a proveďte "drcení" za definovaných podmínek:
 - Nastavte zvolenou teplotu

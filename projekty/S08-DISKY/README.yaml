@@ -1,5 +1,5 @@
 title: Soft penetrable disks
-difficulty: 3S
+difficulty: 2
 keywords:
     - SIMOLANT
 story:
@@ -7,6 +7,3 @@ story:
 instruction:
     - Vysvětlete, co je to entropická repulze a jak se chová řetězec polymeru v dobrém rozpouštědle.
     - Popište vlastnosti (fáze, strukturu) 2D analogie propustných disků implementované v SIMOLANTu.
-literature:
-    - <a href="https://old.vscht.cz/fch/software/simolant/index-cz.html">SIMOLANT</a>
-    - <a href="../cz/pomucky/kolafa/penetrabledisks.txt">Několik tipů</a>

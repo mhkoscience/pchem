@@ -1,12 +1,11 @@
 title: Elektroforéza
-difficulty: 4M
+difficulty: 4
 keywords:
-    -
+    - molekulová dynamika
+    - MACSIMUS
 story:
-    -
+    - Elektroforéza je fyzikálně-chemická separační metoda, která využívá pohyb nabitých částic v elektrickém poli.
 instruction:
-    - Simulujte atom Xe ve vodním roztoku LiI, ve kterém teče elektrický proud.
-    - Může být atom Xe unášen? 
-literature:
-    - <a href="../cz/pomucky/kolafa/elektroforeza.txt">Návod</a>
-    - <a href="../cz/pomucky/kolafa/elektroforeza.zip">data</a>
+    - Simulujte atom Xe ve vodném roztoku LiI, ve kterém teče elektrický proud.
+    - Sledujte, jestli může být atom Xe unášen.
+    - Svá pozorování diskutujte.

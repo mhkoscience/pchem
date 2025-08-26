@@ -1,11 +1,12 @@
 title: Tepelná roztažnost krystalu a skla
-difficulty: 4M
+difficulty: 4
 keywords:
-    -
+    - molekulová mechanika
+    - MACSIMUS
 story:
-    -
+    - Se změnou teploty mění objekty svůj objem. Změny charakterizuje koeficient objemové tepelné roztažnosti.
 instruction:
-    - Vypočtěte koeficient objemové tepelné roztažnosti fcc krystalu modelu argonu.
+    - Uvažujte fcc krystal argonu.
+    - Vypočtěte koeficient objemové tepelné roztažnosti krystalického argonu.
     - Krystal roztavte a rychle ochlaďte, aby vzniklo sklo, a výpočet opakujte. 
-    - Konzultace je doporučená.
-literature:
+    - Diskutujte svá pozorování.

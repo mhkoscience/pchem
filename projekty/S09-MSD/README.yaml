@@ -1,10 +1,8 @@
 title: Střední kvadratické posunutí
-difficulty: 1S
+difficulty: 1
 keywords:
     - SIMOLANT
 story:
     - Střední kvadratické posunutí (Mean Square Displacement) částice je definováno vztahem MSD(t)=⟨[r(0)−r(t)]**2⟩.
 instruction:
     - Pro 2D systém stanovte vlastnosti MSD v různých skupenstvích a geometrii.
-literature:
-    - <a href="../cz/pomucky/kolafa/MSD.txt">Několik tipů</a>

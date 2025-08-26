@@ -1,9 +1,11 @@
 title: 2D kapalina ve štěrbině
-difficulty: 2S
+difficulty: 2
 keywords:
+    - povrchové jevy
     - SIMOLANT
 story:
-    -
+    - Molekuly na površích obyčejně pociťují nerovnováhu sil.
+    - To je podstatou mnoha povrchových jevů, jako je kapilární elevace.
 instruction:
     - Stanovte pro 2D kapalinu implementovanou v SIMOLANTu povrchové napětí a mezifázové napětí kapalina-zeď.
     - Vyzkoušejte přitažlivou i odpudivou zeď alespoň za dvou teplot.

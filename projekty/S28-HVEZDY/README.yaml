@@ -1,7 +1,8 @@
 title: Kulová hvězdokupa
-difficulty: 5M
+difficulty: 5
 keywords:
-    -
+    - pohybové rovnice
+    - MACSIMUS
 story:
     - Kulová hvězdokupa s dostatečným množstvím hvězd je metastabilní útvar pomalu se vypařující do prostoru. 
 instruction:
@@ -11,4 +12,3 @@ instruction:
     - Přidejte výklad o aplikaci věty o viriálu na rovnováhu klastru. 
 literature:
     - V. Vanýsek, Základy astronomie a astrofyziky, Academia, Praha (1980).
-    - <a href="../cz/pomucky/kolafa/stars.txt">Návod</a>

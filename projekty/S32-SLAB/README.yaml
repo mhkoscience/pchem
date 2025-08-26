@@ -1,12 +1,12 @@
-title: Rovnováha kapalina–pára
-difficulty: 4M
+title: Rovnováha kapalina-pára
+difficulty: 4
 keywords:
-    -
+    - molekulová dynamika
+    - fázové rovnováhy
+    - MACSIMUS
 story:
-    -
+    - Molekulové simulace umožňují studovat systém za různé teploty a tlaku.
+    - Toho lze využít při studiu fázových rovnováh.
 instruction:
-    - Stanovte rovnovážný diagram kapalina–pára (modelů) ethanolu (TraPPE-UA) a vody (SPC) za teploty 450 K.
+    - Stanovte rovnovážný diagram kapalina-pára (modelů) ethanolu (TraPPE-UA) a vody (SPC) za teploty 450 K.
     - Simulujte vrstvu kapaliny a páry nad kapalinou.
-literature:
-    - <a href="../cz/pomucky/kolafa/vle.txt">Návod</a>
-    - <a href="../cz/pomucky/kolafa/VLE.zip">data</a>

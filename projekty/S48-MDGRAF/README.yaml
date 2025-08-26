@@ -4,9 +4,9 @@ keywords:
     - molekulová dynamika
     - GROMACS
 story:
-    - Umožňují studovat strukturu a dynamiku molekulových komplexů na časových škálách mikrosekund s atomárním rozlišením.
+    - Simulace molekulární dynamiky umožňují studovat strukturu a dynamiku molekulových komplexů na časových škálách mikrosekund s atomárním rozlišením.
     - Methan jako hydrofobní částice může ve vodném prostředí asociovat s grafenem.
 instructions:
-    - Proveďte molekulově dynamickou simulaci grafenu, tří molekul methanu a vody.
+    - Proveďte molekulově dynamickou simulaci systému obsahující grafen, tři molekuly methanu a vodu.
     - Charakterizujte polohu methanů a vypočítejte Gibbsovu energie adsorpce.
     - Výsledky diskutujte.

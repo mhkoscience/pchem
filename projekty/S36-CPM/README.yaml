@@ -1,12 +1,15 @@
 title: Rozdíl tepelných kapacit
-difficulty: 5M
+difficulty: 5
 keywords:
-    -
+    - molekulová dynamika
+    - voda
+    - MACSIMUS
 story:
-    -
+    - Tepelná kapacita je fyzikální feličina, která popisuje schopnost tělesa akumulovat teplo.
+    - V závislosti na ději rozlišujeme izobarickou molární tepelnou kapacitu (Cpm) a izochorickou molární tepelnou kapacitu (CVm).
 instruction:
     - Simulujte vodu (např. model SPC/E) za běžných podmínek za konstantního tlaku a objemu.
-    - Stanovte rozdíl tepelných kapacit Cpm-CVm jednak přímo (ze simulace při aspoň dvou teplotách v příslušném souboru), jednak ze stavové rovnice (vyberte vhodnou verzi a opět stanovte derivace numericky z několika simulací). 
-    - Porovnejte s reálným experimentem. Která metoda je přesnější?
-    - Konzultace doporučená.
-literature:
+    - Stanovte rozdíl tepelných kapacit Cpm-CVm přímo ze simulací při aspoň dvou teplotách v příslušném statistickém souboru.
+    - Poté rozdíl stanovte ze stavové rovnice (vyberte vhodnou verzi a opět stanovte derivace numericky z několika simulací). 
+    - Porovnejte s experimentálními hodnotami.
+    - Diskutujte přesnost výpočtů.

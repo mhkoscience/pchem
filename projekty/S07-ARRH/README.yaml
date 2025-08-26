@@ -1,12 +1,10 @@
 title: Aktivační energie difuze
-difficulty: 2S
+difficulty: 2
 keywords:
     - SIMOLANT
 story:
-    -
+    - Difuze je samovolný proces rozptylování částic, při němž se částice pohybují z míst s vyšší koncentrací do míst s nižší koncentrací.
+    - Difuzi popisuje difuzní koeficient, který je závislý na teplotě.
 instruction:
     - Pro 2D systém implementovaný v SIMOLANTu stanovte střední kvadratické posunutí (MSD z angl. mean square displacement) a difuzivitu pro několik teplot.
-    - Z Arrheniova diagramu vypočtěte aktivační energii.
-literature:
-    - <a href="https://old.vscht.cz/fch/software/simolant/index-cz.html">SIMOLANT</a>
-    - <a href="../cz/pomucky/kolafa/simolantD.txt">Návod</a>
+    - Z Arrheniova diagramu vypočtěte aktivační energii difuze.

@@ -1,13 +1,11 @@
-title: Poissonova konstanta zlata a pevnost zlata v tahu
-difficulty: 5M
+title: Poissonův poměr zlata a pevnost zlata v tahu
+difficulty: 5
 keywords:
-    -
+    - molekulární mechanika
 story:
-    -
+    - Poissonův poměr (nebo Poissonovo číslo, Poissonova konstanta) je veličina, která popisuje, jak se materiál deformuje do stran, když je natahován nebo stlačován.
 instruction:
-    - Na fcc krystal modelu zlata v periodických okrajových podmínkách aplikujte různý tlak/tah v různých směrech
+    - Na fcc krystal modelu zlata v periodických okrajových podmínkách aplikujte různý tlak/tah v různých směrech.
     - Spočtěte Poissonovu konstantu a srovnejte s experimentem.
-    - Postupně zvyšujte tah a stanovte mez pevnosti. 
-    - Konzultace je doporučená.
-literature:
-    - <a href="https://en.wikipedia.org/wiki/Poisson%27s_ratio">Poissonovu konstantu</a>
+    - Postupně zvyšujte tah a stanovte mez pevnosti.
+    - Diskutujte svá pozorování.
