@@ -1,0 +1,8 @@
+title: Monte Carlo tuhých koulí
+difficulty: 3
+keywords:
+    - Monte Carlo
+story:
+    - Tuhé koule jsou hojně využívaný model pro popis mikroskopického chování.
+instruction:
+    - Simulujte metodou MC tekutinu tuhých koulí v periodických okrajových podmínkách.

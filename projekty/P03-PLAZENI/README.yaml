@@ -1,0 +1,12 @@
+title: Monte Carlo plazení
+difficulty: 3
+keywords:
+    - Monte Carlo
+story:
+    - V Monte Carlo simulaci polymeru je obtížné efektivně generovat nové konformace řetězce, které by odpovídaly skutečné dynamice.
+    - Situaci může řešit tzv reptation krok, kdy je článek polymeru na jedné straně odstraněn a na druhé straně přidán.
+    - Pohyb polymeru pak vypadá jako plazení hada.
+instruction:
+    - Simulujte MC metodou zvanou reptation řetízek N atomů s pevnými délkami vazeb.
+    - Mezi atomy není (kromě pevných vazeb) žádná interakce. Koncové body jsou však natahovány stejně velkými opačně orientovanými silami ve směru osy x.
+    - Stanovte závislost výchylky pružiny (x1 − xN) na síle.

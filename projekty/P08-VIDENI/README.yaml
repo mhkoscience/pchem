@@ -1,0 +1,17 @@
+title: Evoluce barevného vidění
+difficulty: 3
+keywords:
+    - genetické programování
+story:
+    - Samci amerických opic nerozlišují červenou a zelenou barvu, dvě třetiny samic ano.
+    - Toto je důsledkem existence tří alel (označme je A,B,C) pro pigmenty s mírně posunutou spektrální citlivostí.
+    - Gen sídlí na pohlavním chromozomu X, který mají samci jen jeden, a proto nemohou červenou a zelenou rozlišit. 
+    - U samic se sejdou alely dvě; pokud jsou různé, vidí opice barvy, pokud stejné, jsou na tom jako samci.
+    - V populaci je všech tří alel stejně. Musí tedy existovat mechanismus, který toto rovnoměrné zastoupení udržuje, protože v případě zcela náhodné dědičnosti časem jedna či dvě alely vymizí. 
+    - Vidět barevně je určitá evoluční výhoda, lze snáze rozlišit různě barevné ovoce. Např. ale barvovidící opice typu AB může mít se samcem A barvoslepého potomka AA, mechanismus udržující rovnoměrné zastoupení alel je tedy jemnější.
+instruction:
+    - Simulujte tento problém na populaci (alespoň) 10000 opic (5000 samců a 5000 samic) s počátečním zastoupením alel v poměru 2 % A, 49 % B a 49 % C (rozdělte do obou X chromozomů samice a jednoho X samce náhodně). 
+    - V jedné generaci proveďte náhodné spáření samců se samicemi a narození jednoho potomka. Aby počet opic nerostl, vyhubte vždy 5000 nejstarších opic tak, aby jich zbylo 10000.
+    - Tady je však nutno zavést mírnou selekci, např. tak, že barvoslepé opice s určitou pravděpodobností (cca 1 %) zahynou hlady a/nebo nemohou mít potomka.
+literature:
+    - https://vesmir.cz/cz/casopis/archiv-casopisu/2012/cislo-4/co-je-kineticke-monte-carlo.html

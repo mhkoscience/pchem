@@ -1,0 +1,15 @@
+title: Požár pralesa
+difficulty: 2
+keywords:
+    - buněčný automat
+    - mřížka
+story:
+    - Buněčný automat je matematický a programátorský model složený z jednoduchých buněk, které se vyvíjejí v diskrétních časových krocích podle předem daných pravidel.
+instruction:
+    - Uvažujte les na čtvercové mřížce v periodických okrajových podmínkách.
+    - Každý vrchol mřížky se může nacházet ve třech stavech {živý strom, hořící strom, spáleniště}. 
+    - Nová konfigurace se generuje z předchozí podle následujících pravidel. 
+    - Má-li živý strom alespoň jednoho hořícího souseda (ze 4 sousedů), pak vzplane.
+    - Hořící strom shoří (v následující konfiguraci se změní ve spáleniště). 
+    - Na spáleništi vyroste nový strom s pravděpodobností p. 
+    - Vyjděte z konfigurace náhodně rozmístěnými stromy a spáleništi v poměru 1:1 a s několika hořícími stromy. Vhodné p je několik jednotek procent.

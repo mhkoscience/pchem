@@ -1,0 +1,15 @@
+title: Problém obchodního cestujícího
+difficulty: 4
+keywords:
+    - Monte Carlo
+story:
+    - Nechť je dána mapa obsahující N měst.
+    - Některá města jsou spojena silnicí o známé délce.
+    - Pro každá dvě města existuje alespoň jedna cesta po silnici, která je spojuje; těchto cest může být více, přičemž (v této verzi problému obchodního cestujícího) není předem známo, která je nejkratší.
+instruction:
+    - Najděte co nejkratší uzavřenou cestu procházející alespoň jednou každým městem.
+    - Konfigurace je tedy posloupnost N nebo více měst, energie je délka trasy.
+    - Abychom se vyhnuli zachovávání podmínky, že dva sousedící členy posloupnosti musí být spojeny silnicí, můžeme říci, že nejsou-li dvě města spojena, je jejich vzdálenost rovna součtu všech vzdáleností na mapě.
+    - Zkušební kroky MC simulace musí dovolit i změnu počtu měst na trase (některými městy projdeme vícekrát).
+    - Jako počáteční konfiguraci zvolte N-tici (1, 2, ..., N).
+    - Simulujte za snižující se zobecněné teploty.

@@ -1,6 +1,7 @@
 title: Vizualizace zvoleného biomolekulového komplexu
 difficulty: 4
 keywords:
+    - protein
     - PDB
     - VMD
     - Mol*
