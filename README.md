@@ -9,3 +9,5 @@ Q - kvantová chemie v programu Gaussian<br>
 S - simulace molekulové dynamiky ve 2D a 3D<br>
 B - výpočetní biochemie<br>
 P - programovací úlohy lehce související s chemií
+
+Autoři a správci úloh jsou Jiří Kolafa, Michal Kolář a Petr Slavíček.
