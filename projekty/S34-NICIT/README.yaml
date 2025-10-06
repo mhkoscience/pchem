@@ -1,5 +1,6 @@
 title: Simulovaná ničička
-difficulty: 3
+difficulty: 4
+supervisor: Jiří Kolafa
 keywords:
     - molekulová dynamika
     - led
@@ -12,3 +13,5 @@ instruction:
     - Dva ledíky nechte danou rychlostí srazit. Vyzkoušejte nižší i vyšší rychlosti. 
     - Při jaké rychlosti začnou odletovat fragmenty resp. jednotlivé molekuly? 
     - Jako bonus se můžete zmínit o vaší oblíbené filmové ničičce.
+literature:
+    - https://old.vscht.cz/fch/cz/pomucky/kolafa/pchemlm.pdf

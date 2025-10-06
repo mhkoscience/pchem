@@ -1,29 +1,16 @@
-﻿Pro 2D systém implementovaný v SIMOLANTu stanovte MSD a difuzivitu pro několik teplot a z Arrheniova diagramu vypočtěte aktivační energii. (<a href="../cz/pomucky/kolafa/simolantD.txt">Podrobný návod</a>)</td><td>4S</td></tr>
+﻿1) Nastartujte SIMOLANT a nastavte:
+  - "simulation speed" na maximum
+  - cca 100 částic (N)
+  - Boundary conditions → Periodic
+  - NVT simulaci, rychlejší je Monte Carlo (Metropolis), ale lze použít i MD
+  - Před měřením nechte nastavit posunuti (set MC moves), ale na měření vypněte. Také lze po vypnutí "set MC moves" nastavit d=0.5, což je pro řídké systémy vhodná hodnota.
 
-Základní metodologie simulací viz http://old.vscht.cz/fch/cz/pomucky/kolafa/pchem03.pdf
+2) Začněte např. s T=2 (defaultní T=3 je nevhodné, protože je blízko Boyleovy teploty) a po stisku [▫ record] stanovte hodnotu kompresibilitního faktoru pro několik poměrně malých hustot, např. ρ=0.2, 0.1, 0.05, ρ=0.0025.
+  - Čím řidší systém, tím déle simulujte!
+  - Ignorujte hlášku "Cannot follow periodic b.c.! MSD turned off for now...".
 
-MSD v periodických okrajových podmínkách je nutno počítat tak, že algoritmus sleduje, ve kterém periodickém boxu se částice nachází. Pokud se neumí algoritmus rozhodnout, ohlásí chybu "Cannot follow the periodic boundary conditions".
+3) Nakreslete graf Z(rho) a stanovte směrnici tečny v bodě ρ → 0; neumíte-li to jinak, stačí graficky.
+  - Také můžete extrapolovat funkci (Z−1)/ρ k nule a získat přímo B.
+  - Nejlepší postup je fitovat Z na vhodnou funkci, např. Z=1+B*ρ+C*ρ². Je vhodné použít metodu, která použije udané standardní chyby; pokud takovou metodu nemáte, použijte jako váhy 1/σ², kde σ je udaná standardní chyba hodnoty Z.
 
-1) Nastavení:
-- menu → [Boundary conditions] → [Periodic]
-- menu → [Method] → [Molecular dynamics NPT Berendsen]
-- menu → [Show and measure] → [Volume convergence profile]
-- simulation speed na maximum
-- measurement block 10–30 (maximum 100 může vést k chybě "Cannot follow the periodic boundary conditions")
-
-2) Výpočet:
-- nastavte teplotu
-- include → [Convergence prof.] (pod přepínačem CSV)
-- stiskněte [record]
-- spočtěte 10–30 bloků
-- stiskněte [record] znovu a uložte
-- otevřete simolant.csv a zobrazte sloupce MSDx a MSDy (případně jejich součet) jako funkci t
-- stanovte směrnici b (v hustších systémech po vynechání začátku): MSD(t)=a+bt
-- vypočtěte difuzivitu podle vzorce D=b/2 (v 1 dimenzi) resp D=b/4 (pro MSDx + MSDy)
-- opakujte pro stejnou teplotu několikrát, abyste měli lepší statistiku
-
-3) Zopakujte bod 2 pro jinou teplotu.
-
-4) Nakreslete graf závislosti ln D na reciproké teplotě 1/T. Pro Arrheniovské chování je tento graf lineární. Nastane-li tento případ, určete aktivační energii difuze. Neapomeňte, že Boltzmannova konstanta je zde defiována jako 1.
-
-
+4) Opakujte pro několik teplot a srovnejte s hodnotou uvedenou v souboru simolant.txt (B=...).  Pro které hodnoty je simulovaná hodnota přesnější a pro které méně přesná?

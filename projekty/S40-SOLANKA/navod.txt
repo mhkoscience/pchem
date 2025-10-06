@@ -1,4 +1,6 @@
-﻿Simulujte metodou MD zředěný roztok NaCl ve vodě. Zobrazte radiální distribuční funkce Na-Na, Na-Cl a Cl-Cl a diskutujte výsledky. Z koordinačních čísel (vč. H a O i bez) vypočtěte průměrný náboj v kouli o poloměru r okolo iontu a srovnejte s predikcí podle Debyeovy-Hückeovy teorie.
+Následující podrobný návod je pro MACSIMUS. Můžete použít i jiný software, pokud ho ovládáte.
+
+Simulujte metodou MD zředěný roztok NaCl ve vodě. Zobrazte radiální distribuční funkce Na-Na, Na-Cl a Cl-Cl a diskutujte výsledky. Z koordinačních čísel (vč. H a O i bez) vypočtěte průměrný náboj v kouli o poloměru r okolo iontu a srovnejte s predikcí podle Debyeovy-Hückeovy teorie.
 
 ============== 0 instalace ===============
 
@@ -56,7 +58,7 @@ dt.prt=1               ! [ps] jak casto zapisovat do .prt
 ;                      ! konec bloku dat
 --------------------------------------------------------
 
------------ Řídící soubor simulace pro start (příklad) sim.get ----------
+----------- Řídicí soubor simulace pro start (příklad) sim.get ----------
 init="crystal"        ! zacatek; lze tez init="random"
 ! init="start"           ! pokracovani, nove mereni a konvergencni profily
 ! init="cont"            ! pokracovani (vseho)
@@ -91,7 +93,7 @@ Pokud vypadají konvergenční profily dobře, můžete simulovat.  Počítejte 
 
 ================== 3 ostrý běh ==================
 
------------ Řídící soubor pro produktivní běh (příklad) sim.get ----------
+----------- Řídicí soubor pro produktivní běh (příklad) sim.get ----------
 init="start"   ! pokracovani ze sim.cfg, nove mereni a konvergencni profily
 tau.rho=0      ! vypnout rizeni na hustotu
 tau.T=0.5      ! [ps] konstanta termostatu
@@ -124,7 +126,7 @@ Parciální náboje H a O zjistíte v souboru SPCE.mol.
 
 Analyzujte křivky a pokuste se odhadnout Debyeovu stínící délku. Které křivky jsou k tomuto účelu vhodné? Debyeovo stínění po odstranění granularity způsobené jednotlivými molekulami je dáno vzorcem (např. pro náboj okolo Na+):
   q(Na+) = −1 + A exp(-r/λ)
-Srovnejte s predikcí pomocí Debyeovy–Hückelovy teorie
+Srovnejte s predikcí pomocí Debyeovy–Hückelovy teorie.
 
 ================== 5 více ==================
 

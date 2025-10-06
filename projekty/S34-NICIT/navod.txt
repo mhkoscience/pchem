@@ -1,4 +1,6 @@
-﻿Připravte krystalek ledu v modelu TIP4P/2005 za nízké teploty. Odhadněte rychlost, při které je kinetická energie rovna energii potřebné k roztavení ledíků. Dva ledíky nechte danou rychlostí srazit. Vyzkoušejte nižší i vyšší rychlosti. Při jaké rychlosti začnou odletovat fragmenty resp. jednotlivé molekuly? Jako bonus se můžete zmínit o vaší oblíbené filmové ničičce.
+Následující podrobný návod je pro MACSIMUS. Můžete použít i jiný software, pokud ho ovládáte.
+
+Připravte krystalek ledu v modelu TIP4P/2005 za nízké teploty. Odhadněte rychlost, při které je kinetická energie rovna energii potřebné k roztavení ledíků. Dva ledíky nechte danou rychlostí srazit. Vyzkoušejte nižší i vyšší rychlosti. Při jaké rychlosti začnou odletovat fragmenty resp. jednotlivé molekuly? Jako bonus se můžete zmínit o vaší oblíbené filmové ničičce.
 
 K simulaci použijte cookceslc.
 Paralelní verze zde není příliš výhodná (jen malé zrychlení)
@@ -39,15 +41,15 @@ Pro zobrazení vodíkových vazeb použijte příkaz
 
 Pozn.: pokud chcete ledík upravit, např. odstranit molekuly, které (po zrušení periodických okrajových podmínek) lezou po ledíku, postupujte takto:
   show LED.plb
-- přejděte na zobrazení čarami (=poslední, hotkey = &)
-- nastavte rovnoběžné promítání
-- nastavte Click range na 2 nebo 3 (nebo hot key K)
+- přejděte na zobrazení čarami ([7], hotkey = &)
+- nastavte rovnoběžné promítání ([proj], hotkey =)
+- nastavte Click range na 2 nebo 3 ([rg], hot key K)
 - označte prostřední myší molekuly, které chcete odstranit
-- stiskněte Invert [hotkey M]
-- stiskněte Save (hotkey ctrl-s)
+- stiskněte [inv] (hotkey M)
+- stiskněte [save] (hotkey Ctrl-s)
 
 Kontrola: show LED LED-0000.plb
-Do def-souborů musíte dát ovšem změněný počet molekul. Nejlépe ho zjistíte stejně, jako se počítá počet ovcí z počtu noh: pomocí plbinfo zjistíte počet atomů a vydělíte 4 (molekula vody TIP4P05 má navíc site M).
+Do def-souborů musíte dát ovšem změněný počet molekul. Nejlépe ho zjistíte stejně, jako se počítá počet ovcí z počtu nohou: pomocí plbinfo zjistíte počet atomů a vydělíte 4 (molekula vody TIP4P05 má navíc site M).
 
 =============== 3 ===============
 
@@ -105,7 +107,7 @@ Prohlédněte si led1.cp, led1.plb
 
 ========= 4 =========
 
-Vypočtěte rychlost vedoucí k roztavení a převeďte do Å/ps.
+Vypočtěte rychlost vedoucí k roztavení a převeďte do jednotek Å/ps.
 
 Zkopirujte
   cp led1.def led2.def

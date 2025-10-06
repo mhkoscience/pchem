@@ -1,15 +1,17 @@
-﻿Metodou simulovaného žíhání (simulated annealing) lze získat celkem dobrou aproximaci minima energie (optimální struktury, základního stavu).  Pokud zastavíme chlazení za konstantní teploty, získáme (v principu) rovnovážný tvar krystalu.
+Následující podrobný návod je pro MACSIMUS. Můžete použít i jiný software, pokud ho ovládáte.
+
+Metodou simulovaného žíhání (simulated annealing) lze získat celkem dobrou aproximaci minima energie (optimální struktury, základního stavu).  Pokud zastavíme chlazení za konstantní teploty, získáme (v principu) rovnovážný tvar krystalu.
 
 Simulace bude ve vakuových okrajových podmínkách, použijte tedy cookfree.
 Nejprve zkusíme tavení, pak zpětnou krystalizaci.
 
 =============== 1 ===============
 
-Z archivu /home/guest/A.zip (resp. z úlohy „zonální tavba“) budete potřebovat následující soubory:
+Rozbalte data.zip, získáte následující soubory:
   Na+.che
   Cl-.che
 
-Připravíte silové pole (soubor nacl.ble) příkazem
+Připravte silové pole (soubor nacl.ble) příkazem
   blend -o nacl Na+ Cl-
 
 Připravíte krystal příkazem
@@ -37,7 +39,7 @@ dt.prt=1              ! jak často se bude zapisovat řádek protokolu [ps]
 thermostat="Berendsen"! termostat
 ;
 
------------ Řídící soubor simulace - příklad -----------------------
+----------- Řídicí soubor simulace - příklad -----------------------
 ----------- vhodné jméno = taveni.get ----------------
 init="plb"            ! načte nacl-0000.plb
 T=500                 ! počáteční teplota [K]
@@ -47,7 +49,9 @@ no=10000 tau.T=100;   ! tau.T [K] je časová konstanta termostatu
 
 ---------------------------------------------------------------
 
-Job:
+Simulace lokálně:
+  cookfree nacl taveni nacl-0000.plb
+Na klastru:  
   jsub -n JMENO cookfree nacl taveni nacl-0000.plb
 
 Zobrazte průběh teploty a celkové energie: taveni.cp
@@ -59,7 +63,7 @@ Po roztavení zkuste zkrystalizovat.
 Kopie:
   cp taveni.cfg krystalizace.cfg
 
------------ Řídící soubor simulace - příklad -----------------------
+----------- Řídicí soubor simulace - příklad -----------------------
 ----------- krystalizace.get ----------------
 init="start"          ! z krystalizace.cfg
 T=500                 ! konečná teplota
@@ -110,9 +114,9 @@ thermostat="Andersen" ! lepší termostat pro start
 no=100
 ;
 init="start"          ! restart (nebo init="append", abychom viděli postup)
-center.K[0]=10        ! [K] síla do středu ve směru x
-center.K[1]=10        ! [K] síla do středu ve směru y
-center.K[2]=10        ! [K] síla do středu ve směru z
+center.K[0]=1         ! [K] síla do středu ve směru x
+center.K[1]=1         ! [K] síla do středu ve směru y
+center.K[2]=1         ! [K] síla do středu ve směru z
 ;
 center.K[0]=0         ! [K] síla do středu ve směru x
 center.K[1]=0         ! [K] síla do středu ve směru y

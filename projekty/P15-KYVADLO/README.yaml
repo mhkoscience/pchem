@@ -1,5 +1,6 @@
 title: Dvojité kyvadlo
 difficulty: 4
+supervisor: Jiří Kolafa
 keywords:
     - pohybové rovnice
     - chaos
@@ -8,10 +9,10 @@ story:
     - Je to klasický příklad nelineárního dynamického systému, který může vykazovat chaotické chování.
 instruction:
     - Naprogramujte dvojité matematické kyvadlo.
-    - Použijte Verletovu metodu a algoritmus SHAKE pro zachování délek vazeb (iterujte do vysoké přesnosti, jinak se nebude zachovávat energie).
-    - Pro malé výchylky odvoďte vztah pro frekvence obou vlastních kmitů v závislosti na hmotnostech a délkách závěsů. 
-    - Kdy bude pohyb periodický a kdy chaotický? 
-    - Zkuste nastavit takové parametry, aby poměr frekvencí byl poměr zlatého řezu.
+    - Vhodná je Verletova metoda a algoritmus SHAKE pro zachování délek vazeb (iterujte do vysoké přesnosti, jinak se nebude zachovávat energie).
+    - Kdy bude pohyb periodický a kdy chaotický?
+    - Bonus: Pro malé výchylky odvoďte vztah pro frekvence vlastních kmitů v závislosti na hmotnostech a délkách závěsů. Zkuste nastavit takové parametry, aby poměr frekvencí byl poměr zlatého řezu.
 literature:
+    - https://old.vscht.cz/fch/cz/pomucky/kolafa/simul12.pdf#page=14
     - https://www.youtube.com/watch?v=47hQn1ETK80
     - https://www.youtube.com/watch?v=EjNAyOFcwoc

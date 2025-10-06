@@ -1,5 +1,6 @@
 title: P-V diagram 2D tekutiny a kritický bod
 difficulty: 3
+supervisor: Jiří Kolafa
 keywords:
     - fázové rovnováhy
     - SIMOLANT
@@ -9,3 +10,5 @@ story:
 instruction:
     - Nasimulujte několik podkritických izoterem a rovnováhu kapalina-pára.
     - Určit polohu kritického bodu pro 2D systém implementovaný v SIMOLANTu.
+literature:
+    - https://github.com/kolafaj/SIMOLANT

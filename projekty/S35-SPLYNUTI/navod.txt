@@ -1,4 +1,6 @@
-﻿Pokud splynou dvě makroskopické kapky vody, teplota se prakticky nezmění. U velmi malých kapek to však neplatí. Vypočtěte změnu teploty po splynutí dvou kapek vody po 250 molekulách. Simulujte ten samý jev s modelem SPC/E.
+Následující podrobný návod je pro MACSIMUS. Můžete použít i jiný software, pokud ho ovládáte.
+
+Pokud splynou dvě makroskopické kapky vody, teplota se prakticky nezmění. U velmi malých kapek to však neplatí. Vypočtěte změnu teploty po splynutí dvou kapek vody po 250 molekulách. Simulujte ten samý jev s modelem SPC/E.
 
 K simulaci použijte cookcelc.
 Paralelní verze (cookcelcP1) zde není příliš výhodná.

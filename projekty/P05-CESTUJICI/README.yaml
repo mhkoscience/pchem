@@ -1,15 +1,15 @@
 title: Problém obchodního cestujícího
 difficulty: 4
+supervisor: Jiří Kolafa
 keywords:
     - Monte Carlo
+    - simulované žíhání
 story:
-    - Nechť je dána mapa obsahující N měst.
-    - Některá města jsou spojena silnicí o známé délce.
-    - Pro každá dvě města existuje alespoň jedna cesta po silnici, která je spojuje; těchto cest může být více, přičemž (v této verzi problému obchodního cestujícího) není předem známo, která je nejkratší.
+    - Problém obchodního cestujícího je kanonický problém z teorie optimalizace – najít nejkratší uzavřenou trasu přes N měst, (ně)která jsou spojena silnicí o známé délce.
+    - Je „složitý“, protože úplné řešení vyžaduje více než Nᵏ operací pro jakékoliv k.
+    - Simulované žíhání (angl. simulated annealing) je levnou metodou k nalezení celkem dobré trasy.
 instruction:
-    - Najděte co nejkratší uzavřenou cestu procházející alespoň jednou každým městem.
-    - Konfigurace je tedy posloupnost N nebo více měst, energie je délka trasy.
-    - Abychom se vyhnuli zachovávání podmínky, že dva sousedící členy posloupnosti musí být spojeny silnicí, můžeme říci, že nejsou-li dvě města spojena, je jejich vzdálenost rovna součtu všech vzdáleností na mapě.
-    - Zkušební kroky MC simulace musí dovolit i změnu počtu měst na trase (některými městy projdeme vícekrát).
-    - Jako počáteční konfiguraci zvolte N-tici (1, 2, ..., N).
-    - Simulujte za snižující se zobecněné teploty.
+    - Pro účely této úlohy můžete polohy měst vygenerovat náhodně ve čtverci 1×1, vzdálenost je potom rovna kartézské vzdálenosti měst.
+    - Napište program pro Monte Carlo simulaci s tím, že konfigurace je posloupnost N měst a energie je délka trasy. Jako počáteční konfiguraci zvolte N-tici (1, 2, ..., N). Zkušební krok může být prohození dvou náhodně zvolených měst.
+    - Simulujte za snižující se „teploty“. Použijte kB=1 (energie a teplota mají stejnou jednotku). Vyjděte z velmi vysoké teploty (několikanásobek typické vzdálenosti měst) a snižujte teplotu, např. podle vzorce T:=T*q, kde q je blízko 1, např. q=1−0.1/N².
+    - Zadání můžete modifikovat: silnice spojuje jen některá města, vzdálenosti z reálné mapy aj. Pak může být nutné povolit průjezd městem vícekrát nebo dodefinovat vzdálenost přímo nespojených měst jako jejich nejkratší spojnici (což je ovšem jen menší úloha podobného druhu).

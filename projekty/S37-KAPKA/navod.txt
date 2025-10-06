@@ -1,4 +1,6 @@
-﻿Simulujte kapku SPC/E vody v silném elektrickém poli. Jak se změní tvar kapky? (Viz též DOI:10.1021/ie404268f a úloha 122.
+Následující podrobný návod je pro MACSIMUS. Můžete použít i jiný software, pokud ho ovládáte.
+
+Simulujte kapku SPC/E vody v silném elektrickém poli. Jak se změní tvar kapky? (Viz též DOI:10.1021/ie404268f a úloha 122.
 
 K simulaci použijte cookewslc. Paralelní verze zde není příliš výhodná.
 

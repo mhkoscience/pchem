@@ -1,4 +1,6 @@
-﻿Vytvořte krystalky zlata ve tvaru dvacetistěnu. Použijte potenciál typu tight-binding (implementaci dostanete na požádání). Studujte hustotu ve středu krystalku za nulové teploty v závislosti na počtu atomů. Zkuste krystalek roztavit a pomalu zchladit – zkrystalizuje opět?
+Následující podrobný návod je pro MACSIMUS. Můžete použít i jiný software, pokud ho ovládáte.
+
+Vytvořte krystalky zlata ve tvaru dvacetistěnu. Použijte potenciál typu tight-binding (implementaci dostanete na požádání). Studujte hustotu ve středu krystalku za nulové teploty v závislosti na počtu atomů. Zkuste krystalek roztavit a pomalu zchladit – zkrystalizuje opět?
 
 K simulaci použijte metalfree (přiložen, rozzipujte do vašeho pracovního adresáře), pro argon cookfree (~guest/macsimus/bin/cookfree); v případě problémů/nekompatibility se ozvěte.
 
@@ -49,14 +51,14 @@ Vytvořte soubor test.get s obsahem:
 init="start"
 T=0       ! minimalizace energie
 thermostat="Berendsen"
-tau.T=0.2 ! caseva konstanta termostatu
+tau.T=0.2 ! casova konstanta termostatu
 no=100;   ! pocet cyklu
 ----------
 
 Spusťte:
   metalfree au test
 
-Pro dlouhé běhy:
+Pro dlouhé běhy na klastru:
   jsub metalfree au test
 a kontrolujte pomocí
   jstat
@@ -85,4 +87,3 @@ AR
 (vytvoří se ar.ble)
 (iii) Zvětšete parametry cutoff a LJcutoff na aspoň 12.
 Další postup je stejný, jen místo 'metalfree au test' budete mít 'cookfree ar test'. Argon také krystalizuje v fcc, jen asi budete muset změnit mřížkovou konstantu počátečního krystalu.
-

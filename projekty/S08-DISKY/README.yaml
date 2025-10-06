@@ -1,9 +1,14 @@
-title: Soft penetrable disks
+title: Propustné disky
 difficulty: 2
+supervisor: Jiří Kolafa
 keywords:
     - SIMOLANT
+    - koloidní chemie
 story:
-    - Penetrable spheres je jednoduchý model entropické repulze v koloidní chemii.
+    - “Penetrable spheres” je jednoduchý model entropické repulze v koloidní chemii.
 instruction:
-    - Vysvětlete, co je to entropická repulze a jak se chová řetězec polymeru v dobrém rozpouštědle.
-    - Popište vlastnosti (fáze, strukturu) 2D analogie propustných disků implementované v SIMOLANTu.
+    - Vysvětlete, jak se chová řetězec polymeru v dobrém a špatném rozpouštědle a co je to entropická repulze.
+    - Popište vlastnosti (fáze, strukturu) 2D propustných disků implementovaných v SIMOLANTu.
+    - Stanovte přibližně fázový diagram.
+literature:
+    - https://github.com/kolafaj/SIMOLANT

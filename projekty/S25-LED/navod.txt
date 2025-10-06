@@ -1,5 +1,8 @@
-﻿Stanovte bod tání nebo hexagonálního (Ih) nebo kubického (Ic) ledu přímou metodou. Použijte model vody TIP4P/2005 (případně OPC nebo Nada–Eerden – více informací na požádání). K dispozici budete mít i krystal ledu s náhodnou orientací protonů. Přidejte stručné pojednání o polymorfismu ledu.
+Následující podrobný návod je pro MACSIMUS. Můžete použít i jiný software, pokud ho ovládáte.
 
+Stanovte bod tání nebo hexagonálního (Ih) nebo kubického (Ic) ledu přímou metodou. Použijte model vody TIP4P/2005 (případně OPC nebo Nada–Eerden – více informací na požádání). K dispozici budete mít i krystal ledu s náhodnou orientací protonů. Přidejte stručné pojednání o polymorfismu ledu.
+
+Instalujte MACSIMUS: https://old.vscht.cz/fch/cz/pomucky/kolafa/pchem00.pdf
 Budete používat cookewslc, případně cookewslcP1
 
 ========== 1 ===========

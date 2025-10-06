@@ -1,6 +1,6 @@
-﻿Elektrospinning je metoda, kdy se silným elektrickým polem vytahují vlákna z roztoku či taveniny polymeru.  Vlákna jsou velmi tenká (nanovlákna).  Princip metody lze studovat i na mnohem jednodušším případě vody, příp. vody s ionty, viz J. Jirsák, F. Moučka a I.Nezbeda, Ind. Eng. Chem. Res. 2014, 53, 8257−8264 (dx.doi.org/10.1021/ie404268f).
+﻿Následující návod je pro MACSIMUS. Můžete použít i jiný software.
 
-K simulaci použijte cookewslcP1 (paralelní verzi). K simulaci pouřijeme pro jednoduchost vodu SPC/E.
+K simulaci použijte cookewslcP1 (paralelní verzi).
 
 =============== Silové pole ===============
 
@@ -49,10 +49,12 @@ tau.T=0.1        ! rychle chladit
 no=30;           ! 3 ps simulace
 --------------------------------------------
 
-Simulaci spustíme na několika jádrech procesoru. Vhodný počet jader je (i s ohledem na kolegy) 2–4.  Na různých strojích je maximum 8 až 24, ale tyto počty nedoporučuji kromě velmi velkých simulací (>10000 molekul).
+Simulaci spustíme na několika jádrech procesoru. Vhodný počet jader závisí na vašem stroji a je 2–4, více není vhodné pro menší systémy. Vyznačí se proměnnou NSLOTS, na klastru v případě použití utility jsub je to parametr -p:
 
-Simulace (cca 5 minut pro 5000 molekul na 2 procesorech na Selenu):
-  jsub -p POCET_JADER -n JOBNAME cookewslcP1 voda box
+Simulace (trvá minuty, pro 2 jádra):
+  NSLOTS=2 cookewslcP1 voda box
+Na klastru:  
+  jsub -p 2 -n JOBNAME cookewslcP1 voda box
 
 Prohlédnout relaxaci (hlavne koncovou teplotu):
   showcp -p box.cp
@@ -72,7 +74,7 @@ no=50;           ! 5 ps simulace
 --------------------------------------------
 
 Simulace:
-  jsub -p POCET_JADER -n JOBNAME cookewslcP1 voda box
+  NSLOTS=2 cookewslcP1 voda box
 
 Prohlédnout relaxaci (hlavne koncovou teplotu):
   showcp -p box.cp
@@ -96,13 +98,13 @@ Vhodné parametry simulace:
 ---------- E15e8.get ---------------
 init="start"
 tau.T=2            ! linejsi termostat
-el.E[2]=15e8      ! pole ve smeru z [V/m]
+el.E[2]=15e8       ! pole ve smeru z [V/m]
 no=10000;          ! no=100 odpovídá 1 ps, chce to minimálně 100 ps
 ;                  ! automaticky se nastartuje další simulace s init="cont"
 -------------------------------------
 
-Simulace; pro 5000 molekul na 2 procesorech na Selenu (403-as67-03) se spočítají 3–4 ps za hodinu.
-  jsub -p POCET_JADER -n JOBNAME cookewslcP1 voda E15e8
+Simulace (hodiny pro 5000 molekul):
+  NSLOTS=4 cookewslcP1 voda E15e8
 
 Pro prohlížení je vhodná varianta:
   show -I$'\t'i E15e8

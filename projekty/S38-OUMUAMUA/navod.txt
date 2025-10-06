@@ -1,4 +1,6 @@
-﻿Objekt 'Oumuamua proletěl sluneční soustavou a opět ji opustil. Přímo nebyl jeho tvar pozorovatelný, ale podařilo se stanovit světelnou křivku (průběh jasnosti rotujícího objektu v čase), z níž vyplývá, že 'Oumuamua je protáhlého tvaru. Stanovte světelné křivky (jako plochu průřezu v závislosti na čase) rotující podlouhlé molekuly a srovnejte s křivkou 'Oumuamuy. Pozn.: Podle nejnovějších „kvalifikovaných spekulací“ pochází 'Oumuamua z extrasolárního objektu typu Pluto a je tvořena z větší části tuhým dusíkem.
+Následující podrobný návod je pro MACSIMUS. Můžete použít i jiný software, pokud ho ovládáte.
+
+Objekt ʻOumuamua proletěl sluneční soustavou a opět ji opustil. Přímo nebyl jeho tvar pozorovatelný, ale podařilo se stanovit světelnou křivku (průběh jasnosti rotujícího objektu v čase), z níž vyplývá, že ʻOumuamua je protáhlého tvaru. Stanovte světelné křivky (jako plochu průřezu v závislosti na čase) rotující podlouhlé molekuly a srovnejte s křivkou ʻOumuamuy. Pozn.: Podle nejnovějších „kvalifikovaných spekulací“ pochází ʻOumuamua z extrasolárního objektu typu Pluto a je tvořena z větší části tuhým dusíkem.
 
 K simulaci použijte cookfree+x, verzi V3.3m nebo novější.
 Není-li k dispozici, dejte mi vědět.
@@ -79,10 +81,11 @@ dt.plb=1            ! zápis trajektorie
 dt.prt=1            ! zápis protokolu
 T=100               ! počáteční teplota - kromě rychlých vibrací
                     ! ovlivní celkovou rotaci
+epsc=1e-9           ! presne delky vazeb                    
 ;
 -------------------------------------------------
 
-Řídící soubor simulace:
+Řídicí soubor simulace:
 ------------------ 1.get -----------------
 init="random"       ! náhodná orientace
 drift=7             ! bude centrovat, ale nebude nulovat rotace

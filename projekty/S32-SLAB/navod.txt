@@ -1,4 +1,21 @@
-﻿Stanovte rovnovážný diagram (modelů) ethanolu (TraPPE-UA) a vody (SPC) za teploty 450 K pomocí simulace vrstvy kapaliny a páry nad kapalinou.
+Následující podrobný návod je pro MACSIMUS. Můžete použít i jiný software, pokud ho ovládáte.
+
+0)
+Instalujte MACSIMUS. Ve složce macsimus/cook zkonfigurujte „ošizenou“ verzi bez Ewaldovy sumace (bude rychlejší):
+  configure.sh cutpar
+Potvrďte pomocí Enter všechny volby kromě:
+===== Select algorithm for ELECTROSTATIC calculations:
+  0 = Cut-and-shift approximation (MACSIMUS style)
+
+===== Select DETAILS of boundary conditions:
+  s = Slab: z-forces (incl. walls), dens.profiles, surf.tension, NPzzE melting
+      also more geometries (droplet, trickle, cavities)
+
+===== Select PARALLELIZATION (using linux threads):
+      (Not all combinations with the pair-forces method are valid)
+  1 = Linked-cell list method parallelized in x-slabs, Ewald parallelized
+
+Můžete zvolit i sériovou verzi, pak nebudete zadávat NSLOTS nebo jsub -p
 
 1)
 V souboru ...macsimus/blend/data/trappe_ua.par naleznete literaturu k silovému poli. Je dobré se mrknout a citovat.
@@ -10,7 +27,7 @@ V souboru VLE.zip naleznete následující textové soubory:
   mix60+240.get
 
 Definici silového pole vytvoříte příkazem
-  blend -o etoh+spc ethanol -h SPC
+  blend -o ff ethanol -h SPC
 
 2)
 Vhodná velikost vzorku pro dostatečně rychlý výpočet je zhruba krychle o hraně 24 Å, případně (protože se něco vypaří) je možno pár molekul přidat. Bude umístěna v boxu, který by ve směru z měl být cca 3x delší, tedy 72 Å, ve směrech x,y 24 Å.
@@ -20,10 +37,12 @@ Pro zvolené složení si přibližně spočtěte počet obou molekul a upravte 
 3)
 Vhodná data pro start (viz mix60+240.get):
   init="slab" no=1000; ! cca 10 minut
+Spuštěni simulace:
+  NSLOTS=2 cookceslcP1 ff mix60+240
 Spuštěni simulace na klastru:
-  jsub cookceslc etoh+spc mix60+240
+  jsub -p 2 cookceslcP1 ff mix60+240
 Zkotrolovat konvergenci:
-  showcp -p99 mix60+240
+  showcp -p mix60+240
 Zkotrolovat trajektorii:
   show -I%i mix60+240
 
@@ -47,4 +66,4 @@ Případně stanovit i tlak -- ve výpisu hledejte poslední řádek obsahujíc�
 znamená tlak 705 ± 76 kPa (za ± je odhad standardní chyby „1σ“)
 
 7)
-Opakovat pro různá složení. Vhodné je rovnoměrně několik objemových zlomků (molekula alkoholu je větší), výsledný diagram lze uvést v molárních zlomcích (abyste nemusel(a) stanovovat hustoty čistých fází).
+Opakovat pro různá složení. Vhodné je rovnoměrně několik objemových zlomků (molekula alkoholu je větší), výsledný diagram lze uvést v molárních zlomcích (abyste nemusel* stanovovat hustoty čistých fází).

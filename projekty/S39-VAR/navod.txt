@@ -1,4 +1,6 @@
-﻿Simulujte metodou MD ve slab geometrii vodu TIP4P/2005 s párou za teploty 200 °C a stanovte rovnovážné hustoty a tlak.  Stanovte také povrchové napětí.
+Následující podrobný návod je pro MACSIMUS. Můžete použít i jiný software, pokud ho ovládáte.
+
+Simulujte metodou MD ve slab geometrii vodu TIP4P/2005 s párou za teploty 200 °C a stanovte rovnovážné hustoty a tlak.  Stanovte také povrchové napětí.
 
 Budete používat cookewslc nebo cookewslcP1 (paralelní verze – rychlejší)
 
@@ -90,7 +92,7 @@ el.corr="z"           ! Yeh–Berkowitz slab dipole correction
 ;
 ---------------------------------------------
 
-Řídící soubor simulace pro start - případně několik podle počtu částic
+Řídicí soubor simulace pro start - případně několik podle počtu částic
 ----------- vhodné jméno = voda300.get -------------
 init="slab"           ! vytvori vrstvu (kterou nutno dale zrovnovaznit)
 T=TEPLOTA             ! [K] teplota

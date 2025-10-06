@@ -1,17 +1,24 @@
-﻿Simulujte atom Xe v roztoku LiI, ve kterém teče elektrický proud. Může být atom Xe unášen?
+Následující podrobný návod je pro MACSIMUS. Můžete použít i jiný software, pokud ho ovládáte.
+
+Simulujte atom Xe v roztoku LiI, ve kterém teče elektrický proud. Může být atom Xe unášen?
 
 Pokud se má nenabitá částice pohybovat v iontovém roztoku, ve kterém teče proud, musí mít kationty a anionty co nejrůznější afinity k částici – jev je slabý. Zkusíme proto větší atom (Xe) v roztoku LiI.
+
+================= 0 ================
+
+Instalujte MACSIMUS: https://old.vscht.cz/fch/cz/pomucky/kolafa/pchemlm.pdf
 
 =============== 1 start a stanovení hustoty ===============
 
 V zip-archivu najdete parametry silového pole (JC+SPCE.par) a definice molekul.
-Silové pole s dalšími vlastnostmi molekul vyrobíte takto:
+Silové pole ff.ble s dalšími vlastnostmi molekul vyrobíte takto:
   blend -o ff JC+SPCE.par  Xe Li+ I- -h SPCE
 Látky jsou číslované takto: Xe=0 Li+=1 I-=2 voda=3
 
 Budete potřebovat cookewlc cookewlcP1, případně cookewslc cookewslcP1
 
-Protože Xe i Cl jsou zelené, změňte v souboru Xe.gol barvu, aby byl xenon k poznání. Možné barvy: ORANGE WHITE RED BLUE CYAN YELLOW GREEN MAGENTA
+Protože Xe i Cl jsou zelené, změňte v souboru Xe.mol barvu, aby byl xenon k poznání, např. takto:
+  0 Y154/0-XE       XE    0.000000  0    0
 
 Příklad definičního souboru simulace:
 
@@ -36,7 +43,7 @@ dt.prt=1               ! [ps] zápis do .prt
 ;
 --------------------------------------------------------
 
------------ Řídící soubor simulace - příklad, např. sim.get ----------
+----------- Řídicí soubor simulace - příklad, např. sim.get ----------
 init="crystal"        ! začátek
 initrho=800           ! [kg/m3] počáteční hustota
 ! init="start"           ! pokračování, nové měření a konvergenční profily
@@ -53,9 +60,10 @@ no=2000               ! NPT simulace
 ;
 ---------------------------------------------------------------
 
-Job:
-  jsub -n sim1 cookewlc ff sim # sériově
-  jsub -n -p 2 sim1 cookewlc ff sim # na 2 procesorech (pro >3 není efektivní)
+Start simulace (příklad):
+  NSLOTS=2 cookewlcP1 ff sim
+Na klastru:  
+  jsub -n sim1 -p 2  cookewlc ff sim
 
 Zobrazte průběh simulace – je aspoň trochu ustálená hustota?
   showcp -p sim  # nebo doubleclick sim.cp v MidnightCommanderu
@@ -75,7 +83,7 @@ Udělejte si kopie souborů, např. sim9.cfg, sim9.def, sim9.get a opravte tam:
   tau.rho=1
   no=XXX ! odhadněte tak, aby výsledky byly přes noc, můžete naplánovat ve 2 kusech a použít ;;
   el.E[0]=1e9 ! [V/m] můžete zkusit i jiné
-  ;; 
+  ;;
 
 Simulujte.  Sledujte teplotu – vzroste (Jouleovo teplo), ale neměla by vzrůst
 příliš.  V případě problémů snižte T nebo tau.T (ale ne pod 0.1) a opakujte.
@@ -92,4 +100,5 @@ Můžete zkusit s jinými ionty, s jinou velikostí pole, s jinou koncentrací a
 
 ================ DISKUSE ===============
 
-Je částice unášena kationty nebo anionty?  Jaká je souvislost RDF částice-kation, částice-anion s unášením?
+Je částice unášena kationty nebo anionty?
+Jaká je souvislost RDF částice–kation, částice–anion s unášením?

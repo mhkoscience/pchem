@@ -1,21 +1,18 @@
-﻿Stanovte bod varu NaCl za zvýšeného tlaku přímou metodou – kapalina a pára v rovnováze. Systém musí být větší (aspoň Na256Cl256). Zjistěte alespoň kvalitativně, zda v parách NaCl jsou volné ionty, molekuly NaCl nebo větší klastry a pokuste se strukturu par vysvětlit.
+Následující podrobný návod je pro MACSIMUS. Můžete použít i jiný software, pokud ho ovládáte.
 
-Silové pole: Suk Joung and Thomas E. Cheatham, III: J. Phys. Chem. B 112, 9020–9041 (2008)
-(model je vhodný pro ionty ve vodě, jinak není příliš přesný)
+Silové pole: Suk Joung and Thomas E. Cheatham, III: J. Phys. Chem. B 112, 9020–9041 (2008). Model je vhodný pro ionty ve vodě, jinak není příliš přesný, je však jednoduchý.
 
-"Slab" geometrie popisuje systém periodický ve všech směrech, takže ve směru z máme "sendvič" z nekonečně vrstev.  Tyto vrstvy mají jistý fluktuující dipólový moment, a proto se přitahují (je to analogie vzniku Londonových sil).  Tlak ve směru osy z, který se počítá z viriálu sil, je proto nutné korigovat - přitažlivost odečíst.  Viz  manuál, odd. "Slab geometry and vapor-liquid equilibrium", blíže viz C. Yeh, M.L. Berkowitz, J. Chem. Phys. 111, 3155 (1999).
+Technická poznámka: "Slab" geometrie popisuje systém periodický ve všech směrech, takže ve směru z máme "sendvič" z nekonečně vrstev.  Tyto vrstvy mají jistý fluktuující dipólový moment, a proto se přitahují (je to analogie vzniku Londonových sil).  Tlak ve směru osy z, který se počítá z viriálu sil, je proto nutné korigovat – přitažlivost odečíst.  Viz  manuál, odd. "Slab geometry and vapor-liquid equilibrium", blíže viz C. Yeh, M.L. Berkowitz, J. Chem. Phys. 111, 3155 (1999).
 
-Pozn.: Stanovení normálního bodu varu za tlaku 100 kPa je obtížné a vyžaduje nastavení vysoké přesnosti Ewaldovy sumace i dlouhé běhy, proto se spokojíme s tlakem cca 1 MPa a/nebo odhadem tlaku z hustoty.
+Pozn.: Stanovení normálního bodu varu za tlaku 100 kPa je obtížné a vyžaduje nastavení vysoké přesnosti Ewaldovy sumace i dlouhé běhy, proto se spokojíme s tlakem cca 1 MPa.
 
 Budete používat cookewslc (cook), případně cookewslcP1
 
 ================= 0 ================
 
-Z archivu /home/guest/A.zip (resp. z úlohy „zonální tavba“) budete potřebovat následující soubory:
-  Na+.che
-  Cl-.che
+Instalujte MACSIMUS: https://old.vscht.cz/fch/cz/pomucky/kolafa/pchemlm.pdf
 
-Připravíte silové pole (soubor nacl.ble) příkazem
+2) Rozbalte přiložené soubory z data.zip a připravíte silové pole (soubor nacl.ble) příkazem
   blend -o nacl Na+ Cl-
 
 Použijte ALESPOŇ Na200Cl200, spočtěte velikost boxu taveniny (hustota bude za vyšší teploty cca 1000 kg/m3) a dosaďte níže v Å, vyzkoušejte a případně změňte!
@@ -50,10 +47,10 @@ dt.prt=1              ! 1 radek protokolu kazdou ps
 thermostat="Berendsen" ! skalovani rychlosti
 tau.T=1               ! casova konstanta termostatu [ps] - default
 
-slab.zmax=z           ! rozsah pro mereni z-profilu
+slab.max=z            ! rozsah pro mereni z-profilu
 ;
 
------------ Řídící soubor simulace (příklad, vhodné jméno = nacl2000.get) -----------
+----------- Řídicí soubor simulace (příklad, vhodné jméno = nacl2000.get) -----------
 init="slab"           ! vytvori vrstvu (kterou nutno dale zrovnovaznit)
 el.epsk=2 el.epsr=1   ! mene presny Ewald (rychlejsi)
 initrho=200           ! mensi hustota na zacatku, protoze pri vetsi
@@ -98,14 +95,15 @@ slab.sp=-1  ! centrovani vrstvy - jen pro mereni z-profilu
 --------------------------------------
 
 Je třeba sledovat i tlak ve směru z, to se zajistí vytvořenim souboru nacl2000.cpi s následujicím řádkem
---------------------------------------
+Soubor nacl2000.cpi:
 Ptzz
 --------------------------------------
 
 Analýza vysledků:
 1) nacl2000.cp - je vše v pořádku?
-2) plot nacl2000.cm.kgm-3.z:1:2 :3 :4
-   grafy hustoty v kg/m3: Na+, Cl- a největší=součet
+   showcp -p nacl2000.cp
+2) grafy hustoty v kg/m3: Na+, Cl- a největší=součet
+   plot nacl2000.cm.kgm-3.z:1:2 :3 :4
 3) tlak: najít řádek =Ptens.zz [Pa]=
    # HODNOTA STDERR ...  =Ptens.zz [Pa]=
 STDERR (standardní chyba) by měla být několikrát menší než hodnota (chyby jsou typicky několik set kPa)

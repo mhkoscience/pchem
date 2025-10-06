@@ -1,8 +1,0 @@
-title: Madelungova konstanta
-difficulty: 5
-keywords:
-    - molekulová mechanika
-story:
-    - Madelungova konstanta je geometrická konstanta, která určuje, jak silné jsou elektrostatické interakce v iontovém krystalu. Hodnotu má specifickou pro každý typ krystalové mřížky.
-instruction:
-    - Stanovte Madelungovu konstantu několika iontových krystalů (např. NaCl, CsCl, ZnS, CaF2) metodou Ewaldovy sumace.

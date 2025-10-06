@@ -1,5 +1,6 @@
 title: Kapka v elektrickém poli
 difficulty: 3
+supervisor: Jiří Kolafa
 keywords:
     - molekulová dynamika
     - voda
@@ -10,4 +11,4 @@ instruction:
     - Simulujte kapku SPC/E vody v silném elektrickém poli.
     - Diskutuje svá pozorování.
 literature:
-    - https://doi.org/10.1021/ie404268f
+    - https://old.vscht.cz/fch/cz/pomucky/kolafa/pchemlm.pdf
