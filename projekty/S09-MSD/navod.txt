@@ -23,4 +23,4 @@ jmenovat simolant-CP2.csv atd.
   menu → [Boundary conditions] → [Slit (x-periodic,y-walls)]
   menu → [Boundary conditions] → [Box]
 
-Inerpretujte získaná data. Z které geometrie dostaneme nejpřesněji difuzivitu, D=½d MSD(t)/dt (pro jednu dimenzi)?  (Difuzivitu nepočítejte, to je úkol pro jiný projekt.)
+Interpretujte získaná data: Z které geometrie dostaneme nejpřesněji difuzivitu, D=½d MSD(t)/dt (pro jednu dimenzi)?  (Difuzivitu nepočítejte, to je úkol pro jiný projekt.)

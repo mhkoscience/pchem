@@ -20,11 +20,11 @@ V simulaci v periodických okrajových podmínkách je nutno počítat MSD tak, 
   - stiskněte [▫ record]
   - spočtěte 10–30 bloků
   - stiskněte [▫ record] znovu a uložte
-  - otevřete simolant.csv a zobrazte sloupce MSDx a MSDy (případně jejich součet) jako funkci t
+  - otevřete simolant-CP1.csv a zobrazte sloupce MSDx a MSDy (případně jejich součet) jako funkci t
   - stanovte směrnici b (v hustších systémech po vynechání začátku): MSD(t)=a+bt
   - vypočtěte difuzivitu podle vzorce D=b/2 (v 1 dimenzi) resp D=b/4 (pro MSDx + MSDy)
-  - opakujte pro stejnou teplotu několikrát, abyste měli lepší statistiku
+  - opakujte pro stejnou teplotu několikrát, abyste měli lepší statistiku (soubory simolant-CP2.csv atd.)
 
-3) Zopakujte bod 2 pro jinou teplotu (jiné teploty)
+3) Zopakujte bod 2 pro jinou teplotu (jiné teploty).
 
 4) Nakreslete graf závislosti ln D na reciproké teplotě 1/T. Pro Arrheniovské chování je tento graf lineární. Nastane-li tento případ, určete aktivační energii difuze. Nezapomeňte, že Boltzmannova konstanta je zde definována jako 1.
